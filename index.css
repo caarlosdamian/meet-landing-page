@@ -8,3 +8,51 @@
     --ligh-white:#FAFAFA;
     --white:#fff
 }
+
+body{
+    background: var(--ligh-white);
+    height: 100vh;
+    font-family: 'Red Hat Display';
+
+}
+
+.nav-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    position: relative;
+    padding-left:450px ;
+    padding-right:450px ;
+    text-align: center;
+}
+.logo{
+}
+
+.nav-img-left{
+position: absolute;
+left: -32px;
+}
+
+.nav-img-right{
+position: absolute;
+right: -32px;
+}
+
+.nav-h1{
+    font-style: normal;
+font-weight: 900;
+font-size: 64px;
+line-height: 64px;
+text-align: center;
+color: var(--dark-blue);
+max-width: 445px;
+}
+
+.nav-p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--gray);   
+}
