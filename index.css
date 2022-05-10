@@ -1,58 +1,108 @@
-:root{
-    --green-blue:#4D96A9;
-    --dark-purple:#855FB1;
-    --dark-blue:#28283D;
-    --gray:#87879D;
-    --light-blue:#8FE3F9;
-    --light-purple:#D9B8FF;
-    --ligh-white:#FAFAFA;
-    --white:#fff
+:root {
+    --green-blue: #4D96A9;
+    --dark-purple: #855FB1;
+    --dark-blue: #28283D;
+    --gray: #87879D;
+    --light-blue: #8FE3F9;
+    --light-blue-hover: #71C0D4;
+    --light-purple: #D9B8FF;
+    --light-purple-hover: #B18BDD;
+    --ligh-white: #FAFAFA;
+    --white: #fff
 }
 
-body{
+body {
     background: var(--ligh-white);
     height: 100vh;
     font-family: 'Red Hat Display';
 
 }
 
-.nav-container{
+.nav-container {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
     position: relative;
-    padding-left:450px ;
-    padding-right:450px ;
+    padding-left: 450px;
+    padding-right: 450px;
     text-align: center;
 }
-.logo{
+
+.logo {}
+
+.nav-img-left {
+    position: absolute;
+    left: -32px;
 }
 
-.nav-img-left{
-position: absolute;
-left: -32px;
+.nav-img-right {
+    position: absolute;
+    right: -32px;
 }
 
-.nav-img-right{
-position: absolute;
-right: -32px;
-}
-
-.nav-h1{
+.nav-h1 {
     font-style: normal;
-font-weight: 900;
-font-size: 64px;
-line-height: 64px;
-text-align: center;
-color: var(--dark-blue);
-max-width: 445px;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 64px;
+    text-align: center;
+    color: var(--dark-blue);
+    max-width: 445px;
 }
 
-.nav-p{
+.nav-p {
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
     text-align: center;
-    color: var(--gray);   
+    color: var(--gray);
+}
+.nav-button-container{
+    margin-bottom: 110px;
+}
+
+.nav-button {
+    border: none;
+    cursor: pointer;
+    padding: 16px 0;
+    color: var(--white);
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    border-radius: 29px;
+}
+
+.primary {
+    background: var(--green-blue);
+    width: 193px;
+}
+
+.primary:hover {
+    background: var(--light-blue-hover);
+    width: 193px;
+}
+
+.primary {
+    background: var(--green-blue);
+    width: 193px;
+}
+
+.primary>span {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+
+
+    color: var(--light-blue);
+
+}
+
+.secondary {
+    background: var(--dark-purple);
+    width: 139px;
+}
+
+.secondary:hover {
+    background: var(--light-purple-hover);
 }
